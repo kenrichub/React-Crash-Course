@@ -1,12 +1,12 @@
 import "./Modal.css";
 
-function Modal({title}) {
+function Modal({title, cancelTodoDelete}) {
   return (
     <div>
       <div className="modal">
         <p className="modal__title">{title}</p>
         <div className="modal__buttons">
-          <button>Cancel</button>
+          <button onClick={cancelTodoDelete}>Cancel</button>
           <button>Confirm</button>
         </div>
       </div>
