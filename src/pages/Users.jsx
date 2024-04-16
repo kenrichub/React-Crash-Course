@@ -12,6 +12,16 @@ function Users () {
     useEffect(()=> {
         fetchUser()
     },[])
+
+    return (
+        <div>
+            <Link to="/">Go back</Link>
+            <p>{user.id}</p>
+            <p>{user.name}</p>
+            <p>{user.email}</p>
+            <p>{user.username}</p>
+        </div>
+    )
 }
 
 export default Users;
